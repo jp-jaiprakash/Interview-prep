@@ -1,11 +1,11 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
 
 public class Test {
 
@@ -26,19 +26,54 @@ public class Test {
 //      lst.add(new Employee(4,"d"));
 //
 //      Collections.sort(lst, new NameCompare());
+//Object o = new Object();
+//      Set s= new TreeSet();
+//      s.add("oll");
+//      s.add(1);
 
-      List<String> lst1 = new ArrayList<>();
-      lst1.add("jai");
-      lst1.add("om");
-      lst1.add("jagdish");
+//      TreeSet ts = new TreeSet();
+//      ts.add("o");
+//      ts.add(o);
 
-      lst1.stream().filter(x->x.startsWith("j")).map(x->x.toUpperCase()).forEach(x-> System.out.println(x));
+//      Iterator i = s.iterator();
+//      while (i.hasNext())
+//         System.out.println(i.next());
+//      List lst1 = new ArrayList<>();
+//
+//      Test t = new Test();
+//      Test t2 = new Test();
+//
+//      lst1.add(t);
+//      lst1.add(t2);
 
+      HashMap t = new HashMap();
+      t.put(null,1);
+      System.out.println(t.keySet());
 
-      List<String> lst2 = lst1.stream().filter(x->x.startsWith("j")).map(String::toUpperCase).collect(Collectors.toList());
-      System.out.println(lst2);
+      String s = "jai";
+      StringBuilder s
+      s.reverse();
+      Collection sorted = new LinkedList();
+      sorted.add("A");
+      sorted.add("o");
 
-      Float f = new Float("A");
-      System.out.println(f.intValue() + f.byteValue() + f.doubleValue());
+      List l = new ArrayList<>()
+              ;
+      l.add(1);
+      l.add(2);
+      l.add(3);
+      l.add(5);
+
+      l.add(4);
+//      Collections.sort(l);
+      System.out.println(Collections.binarySearch(l,4));
+      for(Object u: sorted)
+         System.out.println(u);
+
+//      Collections.sort(lst1);
+//
+//      for(int i=0; i< 2; i++)
+//         System.out.println(lst1.get(i));
+
    }
 }

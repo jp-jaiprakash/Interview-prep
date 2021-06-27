@@ -45,7 +45,7 @@ public class WordSearch {
       if( j>0 && !visited[i][j-1] && board[i][j-1]==word.charAt(idx+1) && dfs(board,word,idx+1,i,j-1,visited)){
          return true;
       }
-visited[i][j] = false;
+      visited[i][j] = false;
       return false;
    }
 }

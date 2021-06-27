@@ -2,6 +2,11 @@ package algorithms.slidingWindow;
 
 import java.util.HashSet;
 
+/**
+ * brute force will give complexity of n^2
+ *
+ */
+
 public class LongestSubStringWithoutRepeatingChars {
 
    public int lengthOfLongestSubstring(String s){

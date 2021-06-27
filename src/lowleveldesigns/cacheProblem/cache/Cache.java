@@ -38,7 +38,7 @@ public class Cache<Key, Value> {
          this.evictionPolicy.keyAccessed(key);
          return value;
       }catch (NotFoundException | InvalidElementException ex){
-         System.out.println("TRied accessing non existing key");
+         System.out.println("Tried accessing non existing key");
          return null;
       }
    }

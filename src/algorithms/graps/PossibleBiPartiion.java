@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-
+import java.util.Stack;
 
 
 public class PossibleBiPartiion {
@@ -14,6 +14,10 @@ public class PossibleBiPartiion {
    public static void main(String[] args) {
       int [][] input = new int[][]{{1,2},{1,3},{2,3}};
       System.out.println(possibleBipartition(4, input));
+
+      Stack<Integer> stack = new Stack<>();
+
+      stack.peek();
    }
 
    public static boolean possibleBipartition(int n, int[][] dislikes) {
