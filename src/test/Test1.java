@@ -1,13 +1,8 @@
 package test;
 
-import onetwoweek.linkedlist.ListNode;
-
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.groupingBy;
 
 public class Test1 {
 
@@ -26,6 +21,30 @@ public class Test1 {
       lst.add(sal3);
       lst.add(sal4);
       lst.add(sal5);
+
+      Iterator<Salary> it = lst.listIterator();
+
+//      while (it.hasNext()){
+//         Salary temp = it.next();;
+//         System.out.println(temp.getAmount());
+//         if (temp.getAmount()==200)
+//            it.remove();
+//      }
+
+      while (it.hasNext()){
+         Salary temp = it.next();
+         if (temp.getAmount()==200)
+            lst.remove(temp);
+      }
+
+//      for(int i=0; i<lst.size();i++)
+//      {
+//       Salary temp = lst.get(i);
+//       if(temp.getAmount()==200)
+//          lst.remove(temp);
+//      }
+
+      System.out.println(lst);
    }
 
 

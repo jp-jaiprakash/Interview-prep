@@ -50,9 +50,9 @@ public class Test {
       t.put(null,1);
       System.out.println(t.keySet());
 
-      String s = "jai";
-      StringBuilder s
-      s.reverse();
+//      String s = "jai";
+//      StringBuilder s
+//      s.reverse();
       Collection sorted = new LinkedList();
       sorted.add("A");
       sorted.add("o");
